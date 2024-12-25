@@ -17,3 +17,11 @@ Hides all translation offers of other locales except Belarusian, Ukrainian and R
 1. Turn on the "Developer mode" toggle in the left aside on bottom.
 1. Click the Load unpacked button. The "Select the extension directory" dialog opens.
 1. Select the directory that contains YM-Meta-Parser.
+
+## Changelog
+
+# 1.0.1
+* Fixed: Removing translate suggestions from memory of current locale.
+
+# 1.0.0
+* Initial release

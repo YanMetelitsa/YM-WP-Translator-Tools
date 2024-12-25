@@ -21,7 +21,7 @@ class YMWPTT {
 			mutations.forEach( mutationRecord => {
 				/* Checks bottom section */
 				this.check( mutationRecord.target, ( t ) => {
-					return t.querySelectorAll( '.translation-suggestion' );
+					return t.querySelectorAll( '.suggestions__other-languages .translation-suggestion' );
 				}, ( s ) => {
 					return s.getAttribute( 'data-suggestion-locale' );
 				});
@@ -52,6 +52,7 @@ class YMWPTT {
 
 				if ( ! this.allowedLocales.includes( locale ) ) {
 					suggestion.remove();
+					// suggestion.style.background = 'red';
 				}
 			});
 		}
