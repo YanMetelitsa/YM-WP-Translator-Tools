@@ -11,8 +11,8 @@ class YMWPTT {
 			return;
 		}
 
-		console.log( 'YM WP Translator Tools: loaded' );
-		
+		this.message( 'loaded' );
+
 		this.initObserver();
 	}
 
@@ -45,7 +45,7 @@ class YMWPTT {
 		let count       = suggestions.length;
 
 		if ( count && count > this.allowedLocales.length ) {
-			// console.log( `YM WP Translator Tools: bottom loop [${count}]` );
+			// this.message( 'loop', suggestions, `[${count}]` );
 
 			suggestions.forEach( suggestion => {
 				const locale = localeCb( suggestion );
@@ -56,6 +56,10 @@ class YMWPTT {
 				}
 			});
 		}
+	}
+
+	message ( ...message ) {
+		console.log( `🌐 YM WP Translator Tools:`, ...message );
 	}
 }
 
