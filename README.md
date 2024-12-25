@@ -20,8 +20,8 @@ Hides all translation offers of other locales except Belarusian, Ukrainian and R
 
 ## Changelog
 
-# 1.0.1
+### 1.0.1
 * Fixed: Removing translate suggestions from memory of current locale.
 
-# 1.0.0
+### 1.0.0
 * Initial release
